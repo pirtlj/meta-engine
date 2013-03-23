@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Map:</b>
+  <%= @voxel.map_id %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @voxel.type %>
+</p>
+
+<p>
+  <b>X:</b>
+  <%= @voxel.x %>
+</p>
+
+<p>
+  <b>Y:</b>
+  <%= @voxel.y %>
+</p>
+
+<p>
+  <b>Z:</b>
+  <%= @voxel.z %>
+</p>
+
+
+<%= link_to 'Edit', edit_voxel_path(@voxel) %> |
+<%= link_to 'Back', voxels_path %>

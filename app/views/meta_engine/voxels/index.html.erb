@@ -1,0 +1,31 @@
+<h1>Listing voxels</h1>
+
+<table>
+  <tr>
+    <th>Map</th>
+    <th>Type</th>
+    <th>X</th>
+    <th>Y</th>
+    <th>Z</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @voxels.each do |voxel| %>
+  <tr>
+    <td><%= voxel.map_id %></td>
+    <td><%= voxel.type %></td>
+    <td><%= voxel.x %></td>
+    <td><%= voxel.y %></td>
+    <td><%= voxel.z %></td>
+    <td><%= link_to 'Show', voxel %></td>
+    <td><%= link_to 'Edit', edit_voxel_path(voxel) %></td>
+    <td><%= link_to 'Destroy', voxel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Voxel', new_voxel_path %>
