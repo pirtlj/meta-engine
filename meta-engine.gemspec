@@ -7,8 +7,8 @@ require "meta-engine/version"
 Gem::Specification.new do |s|
   s.name        = "meta-engine"
   s.version     = MetaEngine::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Joseph Pirtle"]
+  s.email       = ["pirtlj@gmail.com"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of MetaEngine."
   s.description = "TODO: Description of MetaEngine."
